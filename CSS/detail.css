@@ -1,0 +1,100 @@
+:root {
+  --bg: #f0f0f0;
+  --primary: #213555;
+  --ani: #4f709c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+/* NAVBAR ARTIKEL */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: var(--primary);
+  color: var(--bg);
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Coachjacket, Varsity, T-shir, PDH, Hoodie */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px; /* adjust to prevent overlap with navbar */
+  gap: 10px; /* space between images */
+}
+
+.image-gallery img {
+  width: 45%; /* each image takes up about half the width of the container */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .image-gallery {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-gallery img {
+    width: 100%;
+  }
+}
+
+/* Jersey */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px; /* adjust to prevent overlap with navbar */
+  gap: 10px; /* space between images */
+}
+
+.gallery-container img {
+  width: 30%; /* adjust the width for better layout */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .gallery-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .gallery-container img {
+    width: 100%;
+  }
+}
